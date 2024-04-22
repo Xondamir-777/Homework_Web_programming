@@ -1,9 +1,13 @@
 .App {
   text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1vw; 
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -15,18 +19,19 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h1{
+  margin-left: 0;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +39,53 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+.menu {
+  list-style: none;
+  flex-direction:row;
+  padding-left: 1vmin;
+}
+.menu li {
+  color: white;
+  display:inline-block;
+  margin-right: 3vmin;
+  margin-left: 0;
+}
+
+.menu li button {
+  color: #61dafb;
+  background-color:  #282c34;
+  font-size: calc(10px + 2vmin);
+}
+
+.menu li button:hover {
+  color: white;
+  background-color:  #282c34;
+  font-size: calc(10px + 2vmin);
+}
+
+.content {
+  background-color: gray;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 15px; 
+  padding-bottom: 15px; 
+}
+
+.Simg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+  width: 100%;
   }
 }

@@ -1,0 +1,10 @@
+.btn {
+    color: chartreuse;
+}
+
+.AboutMe {
+    flex-direction:row;
+}
+.AboutMe ul {
+    list-style: none;
+}
